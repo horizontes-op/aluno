@@ -1,12 +1,12 @@
 pipeline {
     agent any
     stages {
-        stage('Jenkins Aluno') {
+        stage('aluno interface') {
             steps {
-                echo 'Jenkins Aluno'
+                echo 'aluno interface'
             }
         }
-        stage('Build') { 
+        stage('build aluno interface') { 
             steps {
                 sh 'mvn clean install'
             }

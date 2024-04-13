@@ -8,19 +8,27 @@ import lombok.experimental.Accessors;
 @Builder
 @Accessors(fluent = true, chain = true)
 public record AlunoIn (
+    // Dados Pessoais
     String nome,
+    String sobrenome,
     String email,
     String genero,
     Date dataNascimento,
+
+    // Contexto
     String cep,
     String escolaridade,
-    Integer periodo,
     String ocupacao,
+    String estudouEm,
     Float renda_per_capita,
-    String modalidade,
-    Float distancia_em_km,
-    String oportunidade,
+
+    // Preferências de oportunidades
+    String turno_disponivel,
+    String disponibilidade_de_deslocamento,
+    String modalidade_do_ensino,
     String areas_interesse,
+    String tipo_oportunidade,
+    String natureza_instinuicao, // Pública, Privada e privada com bolsa
     String descricao
 ) {
     

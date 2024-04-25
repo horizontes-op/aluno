@@ -24,11 +24,11 @@ public record AlunoIn (
 
     // Preferências de oportunidades
     String turno_disponivel,
-    String disponibilidade_de_deslocamento,
+    String disponibilidade_de_deslocamento, 
     String modalidade_do_ensino,
     String areas_interesse,
     String tipo_oportunidade,
-    String natureza_instinuicao, // Pública, Privada e privada com bolsa
+    String natureza_instituicao, // Pública, Privada e privada com bolsa
     String descricao
 ) {
     
